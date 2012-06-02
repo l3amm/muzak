@@ -114,6 +114,7 @@ DEPENDENCIES
   coffee-rails (~> 3.1.1)
   jquery-rails
   rails (= 3.1.4)
+  rake
   rest-client
   sass-rails (~> 3.1.5)
   sqlite3
