@@ -1,6 +1,9 @@
 Muzak::Application.routes.draw do
-  root :to => "users#index"
-  resources :users
+  # root :to => "users#index"
+  # resources :users
+  get "users/current_track_url"
+  get "users/create"
+  get "users/create_transaction"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

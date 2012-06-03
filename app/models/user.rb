@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  belongs_to :playlist
   
   def create_euclid_shopper
     url = "https://store.euclidelements.com/shoppers.json?credential=hackathon"

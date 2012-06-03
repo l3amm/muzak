@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602200147) do
+ActiveRecord::Schema.define(:version => 20120602221414) do
+
+  create_table "playlists", :force => true do |t|
+    t.integer  "time_played"
+    t.datetime "last_updated"
+    t.text     "urls"
+    t.text     "current_url"
+  end
 
   create_table "users", :force => true do |t|
     t.text     "mac_address"
@@ -22,6 +29,9 @@ ActiveRecord::Schema.define(:version => 20120602200147) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "shopper_id"
+    t.integer  "track_length"
+    t.integer  "playlist_id"
+    t.integer  "timer"
   end
 
 end
