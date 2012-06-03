@@ -47,7 +47,7 @@ class UsersController < ApplicationController
       playlist.urls.delete current_song
       playlist.save
     else
-      @user = User.create(params[:mac_address])
+      @user = User.create(mac_address: params[:mac_address])
     end
     @user.spotify_song = "spotify:track:#{params[:song]}"
     @user.save

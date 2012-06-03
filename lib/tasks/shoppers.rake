@@ -44,7 +44,7 @@ namespace :shoppers do
       p x.timer
       x.timer = 0 if x.timer.nil?
       x.timer += 1
-      if x.timer == 10
+      if x.timer == 20
         p "removing from the playlist"
         p x
         p x.spotify_song
